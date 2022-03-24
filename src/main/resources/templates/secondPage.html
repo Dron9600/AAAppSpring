@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form >
+<h1>secondPage</h1>
+<p th:text="'id: ' + ${data.id}"></p>
+<p th:text="'content: ' + ${data.content}"></p>
+<p th:text="'days: ' + ${data.customer}"></p>
+
+Choose:
+<div><input type="checkbox" name="check-1" value="check-1" id="check-1" checked>
+    <label for="check-1">Choice 1</label></div>
+<div><input type="checkbox" name="check-2" value="check-2" id="check-2">
+    <label for="check-2">Choice 2</label></div>
+<div><input type="checkbox" name="check-3" value="check-3" id="check-3">
+    <label for="check-3">Choice 3</label></div>
+<a href="/">Submit another message </a>
+</form>
+</body>
+</html>

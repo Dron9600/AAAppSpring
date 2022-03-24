@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/}" th:object="${data}" method="post" >
+<!--    <p>Id: <input type="text" th:field="*{id}" /></p>-->
+<!--    <p>Message: <input type="text" th:field="*{content}" /></p>-->
+
+<!--&lt;!&ndash;    <input type="radio" id = "customer" th:field="*{customer}">&ndash;&gt;-->
+<!--    <input type="radio" th:field="*{customer}" id="rButton1" th:value="45" >-->
+<!--    <label for="rButton1"> 45 customers</label>-->
+<!--    <br>-->
+<!--    <input type="radio" th:field="*{customer}" id="rButton2" th:value="228">-->
+<!--    <label for="rButton2"> 228 customers</label>-->
+<!--    <br>-->
+    Select direction:
+    <select name="section" id="section" >
+        <option
+                th:each="route: ${routes}" th:object="${routesData}"
+                th:text="${route.direction}"
+
+        ></option>
+
+    </select>
+
+    <p><input type="submit" value="Continue" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
