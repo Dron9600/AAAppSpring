@@ -1,4 +1,4 @@
-package kz.prudnikov.airAstanaAppSpring.data;
+package kz.prudnikov.airAstanaAppSpring.getterSetter;
 
 public class RoutesData {
     String direction;

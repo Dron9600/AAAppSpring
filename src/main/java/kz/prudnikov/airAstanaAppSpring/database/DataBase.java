@@ -38,6 +38,7 @@ public class DataBase {
             }
             return answer;
         }
+
 //            String direction = "ALA/MSK";
 //            String insertSQL = "INSERT INTO routes(direction) VALUES(?)";
 //        PreparedStatement pstmt = connection.prepareStatement(insertSQL);
